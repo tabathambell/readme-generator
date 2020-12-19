@@ -31,8 +31,23 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license would you like to add?',
-        choices: ["Apache", "BSD 3-Clause"],
-    }
+        choices: ["Apache", "BSD 3-Clause", "GPL", "MIT"],
+    },
+    {
+        type: 'input',
+        name: 'contributors',
+        message: 'Who contributed to your application?',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Write out your test instructions.',
+      },
+    {
+        type: 'input',
+        name: 'questions',
+        message: 'Enter your e-mail and direct GitHub link so users may contact you for questions.',
+    },
 ];
 
 // TODO: Create a function to write README file
